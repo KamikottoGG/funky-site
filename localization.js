@@ -1,5 +1,5 @@
 var lastSelectedButton = document.getElementById("langEN");
-
+var text = "sorry, but at the moment discord is under development."
 function localizeUA() {
     var main = document.getElementById("main_text");
     var invite = document.getElementById("invite");
@@ -13,7 +13,7 @@ function localizeUA() {
     if (lastSelectedButton) {
         lastSelectedButton.classList.remove("selected");
     }
-
+    text = "вибачте але наразі дiскорд у розробці ("
     lastSelectedButton = button;
 }
 
@@ -26,7 +26,7 @@ function localizeEN() {
 
     var button = document.getElementById("langEN");
     button.classList.add("selected");
-
+    text = "sorry, but at the moment discord is under development."
     if (lastSelectedButton) {
         lastSelectedButton.classList.remove("selected");
     }
@@ -43,10 +43,14 @@ function localizeRU() {
 
     var button = document.getElementById("langRU");
     button.classList.add("selected");
-
+    text = "извините но в данный момент дискорд в разработке("
     if (lastSelectedButton) {
         lastSelectedButton.classList.remove("selected");
     }
 
     lastSelectedButton = button;
+}
+function discord()
+{
+    alert(text);
 }

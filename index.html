@@ -118,6 +118,7 @@
     <link href="cover.css" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-bg-dark">
+
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -137,13 +138,13 @@
 
 
     
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column black">
   <header class="mb-auto">
     <div>
       <h3 class="float-md-start mb-0">Funkin</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#" id="home">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="https://discord.gg/VsUhUkbT" id="boticord">Discord</a>
+        <a class="nav-link fw-bold py-1 px-0" onclick="discord()" id="boticord">Discord</a>
       </nav>
     </div>
   </header>
@@ -164,5 +165,6 @@
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
 <script src="localization.js"></script>
+
     </body>
 </html>
