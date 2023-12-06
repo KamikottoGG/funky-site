@@ -25,9 +25,9 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: black;
-    abackground: rgb(19, 19, 19);
-    animation: 1main-load 2s forwards;
+
+    background: rgb(19, 19, 19);
+    animation: main-load 2s forwards;
 }
 @keyframes main-load{
     to{
@@ -146,10 +146,12 @@ body {
 }
 
 .invite-button::after {
+    font-size: 1.5rem;
     content: "Пригласить!";
     position: absolute;
     top: 50%; 
     left: 50%; 
+    font-size: тут оптимизируй шрифт;
     transform: translate(-50%, -50%); 
     white-space: nowrap;
 }
