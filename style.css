@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+   font-family: 'Pixelify Sans', sans-serif;;
+   overflow: hidden;
+}
+.main{
+
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background: rgb(19, 19, 19);
+    animation: main-load 2s forwards;
+}
+@keyframes main-load{
+    to{
+        background: black;
+    }
+}
+
+
+.header{    
+    
+    justify-content:space-between;
+    align-items: center;
+    
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    border-bottom-left-radius: 10rem;
+    background: black;
+    padding-left: 3rem;
+    animation: header-load 2s forwards;
+    
+    display: flex;
+
+}
+@keyframes header-load{
+    from{
+        top: -5rem;
+    }
+    to{
+        top: 0;
+        background: rgb(19, 19, 19);
+    }
+}
+.funkin-site-name{
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+}
+.funkin-site-name h1{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+.funkin-site-name h1::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 1rem;
+    border-bottom: 0.5rem solid;
+    border-color: white;
+    animation: site-logo-load 2s forwards 2s;
+}
+@keyframes site-logo-load {
+    to{
+        width: 150%;
+    }
+}
+.funkin-site-name img{
+    margin-left: 1rem;
+    height: 4rem;
+    rotate: 15deg;
+}
+.funkin-src{
+    margin: 3rem;
+}
+.funkin-src a{
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+    position: relative;
+    font-size: 1.5rem;
+    margin: 1rem;
+
+    font-family: 'Pixelify Sans', sans-serif;
+    text-transform: lowercase;
+    transition: 1s;
+}
+.funkin-src a:hover{
+    
+    color: white;
+    text-decoration: underline;
+}
+.main-body{
+    margin: 1rem;
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    height: 75%;
+
+}
+.main-body img{
+    width: 15rem;
+}
+.invite-button {
+    position: relative;
+    width: 20rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2rem;
+    color: black;
+    height: 5%; 
+    cursor: pointer;
+    background-color: rgb(49, 176, 209);
+    border: 5px black solid;
+    border-radius: 0.75rem;
+    text-align: center; 
+    padding: 10px; 
+}
+
+.invite-button::after {
+    font-size: 1.5rem;
+    content: "Пригласить!";
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    font-size: тут оптимизируй шрифт;
+    transform: translate(-50%, -50%); 
+    white-space: nowrap;
+}
+.invite-button::before {
+    content: "";
+    position: absolute;
+    border: 7px solid white;
+    top: -13px;
+    bottom: -13px;
+    right: -13px;
+    left: -13px;
+    border-radius: 1rem;
+
+}
+
+.invite-button:hover::after{
+    animation: try-sing 2s alternate;
+    
+}
+
+@keyframes try-sing {
+    from{
+        opacity: 0;
+        content: "";
+    }
+    1%{
+        content: "Просто попробуй!";
+        color: aliceblue;
+    }
+    to{
+        opacity: 1;
+        color: aliceblue;
+        content: "Просто попробуй!";
+    }
+    
+}
+.main-body h1{
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+    text-anchor: middle;
+
+}
+.citates{
+    margin: 1rem;
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    height: 15%;
+
+}
+.enter{
+    animation: enter-citate 2s forwards;
+}
+.leave{
+    animation: leave-citate 2s forwards;
+}
+.citates p{
+    color: aliceblue;
+    font-family: 'Nova Square', sans-serif;
+}
+@keyframes leave-citate {
+    to{
+        transform: translateY(15rem);
+    }
+    
+}
+@keyframes enter-citate{
+    from{
+        transform: translateY(15rem);
+    }
+    to{
+        
+    }
+}
+
