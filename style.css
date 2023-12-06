@@ -45,9 +45,9 @@ body {
     width: 100%;
     height: 5rem;
     border-bottom-left-radius: 10rem;
-    background: rgb(19, 19, 19);
+    background: black;
     padding-left: 3rem;
-    animation: 1header-load 2s forwards;
+    animation: header-load 2s forwards;
     
     display: flex;
 
