@@ -48,7 +48,7 @@ body {
     padding-left: 3rem;
     animation: header-load 2s forwards;
     display: flex;
-    flex-direction: column;
+
 }
 @keyframes header-load{
     from{
