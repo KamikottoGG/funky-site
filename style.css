@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     align-items: center;
-
+    
     width: 100%;
     height: 100%;
     display: flex;
@@ -40,7 +40,6 @@ body {
     
     justify-content:space-between;
     align-items: center;
-    
     position: relative;
     width: 100%;
     height: 5rem;
@@ -48,9 +47,8 @@ body {
     background: black;
     padding-left: 3rem;
     animation: header-load 2s forwards;
-    
     display: flex;
-
+    flex-direction: column;
 }
 @keyframes header-load{
     from{
@@ -97,7 +95,7 @@ body {
     rotate: 15deg;
 }
 .funkin-src{
-    margin: 3rem;
+    padding: 3rem;
 }
 .funkin-src a{
     color: rgb(54, 54, 54);
@@ -235,3 +233,37 @@ body {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .header{
+        flex-direction: column;
+    }
+    .funkin-src{
+        margin: 0;
+        padding: 0;
+    }
+    .header{    
+    
+        justify-content:space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 10rem;
+        border-bottom-left-radius: 10rem;
+        background: black;
+        padding-left: 3rem;
+        margin-bottom: 0;
+        animation: header-load 2s forwards;
+        display: flex;
+        flex-direction: column;
+    }
+    @keyframes header-load{
+        from{
+            top: -5rem;
+        }
+        to{
+            top: 0;
+            background: rgb(19, 19, 19);
+        }
+    }
+
+  }
